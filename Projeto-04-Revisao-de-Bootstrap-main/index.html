@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBlog | Tech & Help Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-cpu"></i> ByteBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light ms-2" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            <i class="bi bi-person-circle"></i> Login
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> <strong>Bem-vindo!</strong> Nosso último post sobre IA já está no
+            ar. Confira abaixo.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <div class="container my-5" id="blog">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold">📰 Últimas do Tech</h2>
+            <span class="badge bg-primary fs-6">4 novos artigos</span>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card post-card shadow-sm h-100">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2 badge-custom">Inteligência Artificial</span>
+                        <h5 class="card-title">Como a IA generativa está mudando o desenvolvimento web</h5>
+                        <p class="card-text text-muted">Ferramentas como Copilot estão alterando a forma como
+                            programadores iniciantes aprendem. Entenda os impactos reais...</p>
+                        <p class="text-muted small mb-0"><i class="bi bi-person"></i> Por Rafaela Costa • 2 horas atrás
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card post-card shadow-sm h-100">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2 badge-custom">Segurança</span>
+                        <h5 class="card-title">Vazamento de dados: como se proteger com medidas simples</h5>
+                        <p class="card-text text-muted">Usar um gerenciador de senhas e ativar 2FA já resolve 80% dos
+                            riscos. Guia prático para o dia a dia.</p>
+                        <p class="text-muted small mb-0"><i class="bi bi-person"></i> Por Lucas Almeida • 5 horas atrás
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card post-card shadow-sm h-100">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2 badge-custom">Ferramentas</span>
+                        <h5 class="card-title">Bootstrap 5 vs Tailwind: qual escolher para projetos acadêmicos?</h5>
+                        <p class="card-text text-muted">Comparativo honesto entre os dois frameworks mais usados no
+                            front-end atualmente.</p>
+                        <p class="text-muted small mb-0"><i class="bi bi-person"></i> Por Maria Fernanda • Ontem</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card post-card shadow-sm h-100">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2 badge-custom">Carreira</span>
+                        <h5 class="card-title">Portfólio de desenvolvedor: o que avaliadores realmente olham</h5>
+                        <p class="card-text text-muted">Dicas de recrutadores tech sobre projetos, README e commits que
+                            fazem diferença.</p>
+                        <p class="text-muted small mb-0"><i class="bi bi-person"></i> Por João Pedro • 2 dias atrás</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation" class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Anterior</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container my-5" id="faq">
+        <h2 class="fw-bold mb-4">❓ Central de Ajuda (FAQ)</h2>
+        <p class="text-muted">Perguntas frequentes dos nossos leitores e usuários do blog.</p>
+
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Como faço para me cadastrar no blog?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Clique no botão <strong>Login</strong> no menu superior e, no modal, selecione "Criar uma
+                        conta". Preencha seus dados e em instantes você terá acesso aos conteúdos exclusivos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Vocês oferecem newsletter por e-mail?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sim! Toda sexta-feira enviamos um resumo com os melhores artigos da semana. Você pode assinar
+                        através do modal de <strong>Newsletter</strong> que aparece ao clicar no botão "Assinar" no
+                        rodapé.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Os artigos são escritos por profissionais da área?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Todos os nossos autores são estudantes e profissionais de TI que compartilham experiências reais
+                        do mercado. Acreditamos no aprendizado colaborativo.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Posso sugerir temas para o blog?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Claro! Use o formulário de contato no rodapé ou mande um e-mail para <a
+                            href="mailto:sugestoes@byteblog.com">sugestoes@byteblog.com</a>. Adoramos pautas da
+                        comunidade.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel"><i class="bi bi-box-arrow-in-right"></i> Acesse sua
+                        conta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="seu@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordInput" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Sua senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                    </form>
+                    <hr>
+                    <p class="text-center mb-0">Ainda não tem conta? <a href="#" data-bs-toggle="modal"
+                            data-bs-target="#signupModal" data-bs-dismiss="modal">Criar uma</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="newsletterModalLabel">📬 Assinar Newsletter</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="small">Receba as novidades direto no seu e-mail.</p>
+                    <input type="email" class="form-control mb-3" placeholder="Digite seu melhor e-mail">
+                    <button class="btn btn-success w-100">Assinar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed bottom-0 end-0 p-3">
+        <button type="button" class="btn btn-success rounded-pill shadow" data-bs-toggle="modal"
+            data-bs-target="#newsletterModal">
+            <i class="bi bi-envelope"></i> Assinar Newsletter
+        </button>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0 small">© 2026 ByteBlog – Projeto acadêmico | Bootstrap 5 • Interatividade sem JavaScript</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
